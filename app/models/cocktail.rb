@@ -4,5 +4,6 @@ class Cocktail < ApplicationRecord
   has_many :ingredients, through: :doses
 
   validates :name, uniqueness: true, presence: true
-  validates :detail, uniqueness: true
+
+  mount_uploader :photo, PhotoUploader
 end

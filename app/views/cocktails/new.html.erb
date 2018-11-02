@@ -2,6 +2,7 @@
   <h1>Let's make magic </h1>
   <%= simple_form_for [@cocktail] do |f| %>
     <%= f.input :name %>
-    <%= f.input :detail %>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
     <%= f.submit "Continue", class: "btn btn-danger" %>
   <% end %>
