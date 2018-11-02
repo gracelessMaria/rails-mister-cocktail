@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Let's make magic </h1>
+  <%= simple_form_for [@cocktail] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :detail %>
+    <%= f.submit "Continue", class: "btn btn-danger" %>
+  <% end %>

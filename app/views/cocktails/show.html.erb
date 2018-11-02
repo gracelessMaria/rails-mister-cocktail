@@ -1,0 +1,9 @@
+<%= link_to "Home page", cocktails_path %>
+<ul>
+<li><h1><%= @cocktail.name %></h1><br>
+<p><%= @cocktail.detail %></p><br>
+</li>
+</ul>
+<br>
+
+<%= link_to "delete this potion", cocktail_path(@cocktail), method: :delete %>

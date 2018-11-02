@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Drink your potions </h1>
+<ul>
+<% @cocktails.each do |cocktail| %>
+  <li><%= cocktail.name %></li>
+    <%= link_to "Recipe", cocktail_path(cocktail) %>
+<% end %>
+</ul>
+<br>
+<%= link_to "Create a new potion", new_cocktail_url %>
+</div>
+
